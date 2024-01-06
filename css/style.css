@@ -1,0 +1,100 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none !important;
+  color: #1a1e21;
+}
+
+.section-heading {
+  color: var(--bs-secondary);
+}
+
+/* NAVBAR SECTION */
+nav {
+  background: #fff !important;
+}
+nav .navbar .nav-link {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-toggler {
+  outline: none !important;
+  padding: none !important;
+}
+
+/* HOME SECTION */
+.carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before {
+  content: "";
+  background-color: rgba(12, 11, 10, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.carousel-inner .carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 37%;
+  left: 0;
+  right: 0;
+}
+.carousel-inner .carousel-caption h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  width: 80%;
+  margin: 0px auto 10px auto;
+}
+/* .carousel-inner .carousel-caption img {
+
+} */
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-caption h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 577px) {
+  .carousel-inner .carousel-caption h2 {
+    font-size: 25px;
+  }
+  .carousel-inner .carousel-caption p {
+    font-size: 13px;
+  }
+}
+
+/* TESTIMONIALS SECTION */
+.testimoni .box {
+  padding: 10px 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* PRODUCT SECTION */
+.row img {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.row:hover img {
+  transform: scale(1.1);
+}
